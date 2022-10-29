@@ -7,7 +7,7 @@ var reverse = function(x) {
     if (x < 0) {
         rev = -rev
     }
-    if (rev <= Math.pow(-2, 31) || rev >= Math.pow(2, 31) - 1 ){
+    if (rev <= -2147483648 || rev >= 2147483647 ){
         rev = 0;
     }
     return rev    
