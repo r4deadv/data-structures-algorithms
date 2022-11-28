@@ -8,6 +8,5 @@ var addDigits = function(num) {
         return num;
     }
     let sum = num.toString().split('').reduce((acc, curr) => Number(acc) + Number(curr), 0);
-    console.log(sum)
     return addDigits(sum)
 };
