@@ -15,9 +15,7 @@ var areAlmostEqual = function(s1, s2) {
         return true;
     }
     if(a.length === 2) {
-        a = a.sort();
-        b = b.sort();
-        if(a[0] === b[0] && a[1] === b[1]) {
+        if(a[0] === b[1] && a[1] === b[0]) {
             return true;
         }
     }
