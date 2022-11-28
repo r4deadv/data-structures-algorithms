@@ -3,5 +3,11 @@
  * @return {number}
  */
 var addDigits = function(num) {
-    return 1 + (num - 1) % 9
+    
+    if(num < 10) {
+        return num;
+    }
+    let sum = num.toString().split('').reduce((acc, curr) => Number(acc) + Number(curr), 0);
+    console.log(sum)
+    return addDigits(sum)
 };
